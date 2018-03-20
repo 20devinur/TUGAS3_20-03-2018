@@ -13,7 +13,7 @@ $json = array();
 
 if(mysql_num_rows($result)){
 while($row=mysql_fetch_row($result)){
-$json['mahasiswa'][]=$row;
+$json[]=$row;
 }
 echo json_encode($json);
 }
